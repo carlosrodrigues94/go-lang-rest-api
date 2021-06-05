@@ -4,22 +4,13 @@
 
 ### Routes
 
-`
-GET http://localhost:5000/api/v1/books
-List all Books
-
-GET http://localhost:5000/api/v1/books/:id
-List a single Book
-
-POST http://localhost:5000/api/v1/books/
-Create a Book
-
-PUT http://localhost:5000/api/v1/books/
-Update a Book
-
-DELETE http://localhost:5000/api/v1/books/:id
-Delete a Book (soft delete)
-`
+| Method | Route                                  | Description |
+| ------ | -------------------------------------- | ----------- |
+| get    | http://localhost:5000/api/v1/books     | List all    |
+| get    | http://localhost:5000/api/v1/books/:id | List one    |
+| post   | http://localhost:5000/api/v1/books/    | Create      |
+| put    | http://localhost:5000/api/v1/books/    | Update      |
+| delete | http://localhost:5000/api/v1/books/:id | Delete      |
 
 ### Payloads
 
@@ -36,9 +27,6 @@ Delete a Book (soft delete)
   "author":"the book author",
   "img_url":"url.host"
 }
-
-
-
 
 // updating a book
 
